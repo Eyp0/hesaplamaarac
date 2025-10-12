@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>litre-galonHesapla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>litre-galonHesapla</h1>
+        <div class="input-container">
+            <h3>L (Litre) Giriniz:</h3>
+            <input type="number" id="litre" placeholder="Litre değeri giriniz">
+            <button id="calculate" onclick="galonHesapla()">Galona'a Çevir</button>
+        </div>
+        <div class="input-container">
+            <h3>Gal(Galon) Giriniz:</h3>
+            <input type="number" id="galon" placeholder="Galon değeri giriniz">
+            <button id="calculate" onclick="litreHesapla()">Litre'ye Çevir</button>
+        </div>
+        <p id="sonuc"></p>
+    </div>
+    <div class="container">
+        <h2>Litre - Galon Çevirme</h2>
+        <p>Hacim birimlerini birbirine çevirebilirsiniz. Litre (L) ve Galon (Gal) arasında dönüşüm yapabilirsiniz. 1 galon yaklaşık 3.785 litreye eşittir.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

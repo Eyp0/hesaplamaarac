@@ -147,7 +147,7 @@ h2 {
 }
 
 /* Ortak Input Stilleri */
-#sayi, #us, #dogum, #santigrat, #fahrenheit, #boy, #kilo, #birinicidikkenar, #ikincidikkenar, #not1, #not2, #not3, #not4, #not5, #not6, #not7, #not8, #dersSayisi {
+#sayi, #us, #dogum, #santigrat, #fahrenheit, #boy, #kilo, #birinicidikkenar, #ikincidikkenar, #not1, #not2, #not3, #not4, #not5, #not6, #not7, #not8, #dersSayisi, #litre, #galon {
     flex: 1;
     padding: 15px 18px;
     border: 2px solid #e2e8f0;
@@ -159,7 +159,7 @@ h2 {
     font-weight: 500;
 }
 
-#sayi:focus, #us:focus, #dogum:focus, #santigrat:focus, #fahrenheit:focus, #boy:focus, #kilo:focus, #birinicidikkenar:focus, #ikincidikkenar:focus, #not1:focus, #not2:focus, #not3:focus, #not4:focus, #not5:focus, #not6:focus, #not7:focus, #not8:focus, #dersSayisi:focus {
+#sayi:focus, #us:focus, #dogum:focus, #santigrat:focus, #fahrenheit:focus, #boy:focus, #kilo:focus, #birinicidikkenar:focus, #ikincidikkenar:focus, #not1:focus, #not2:focus, #not3:focus, #not4:focus, #not5:focus, #not6:focus, #not7:focus, #not8:focus, #dersSayisi:focus, #litre:focus, #galon:focus {
     border-color: #667eea;
     box-shadow: 0 0 0 5px rgba(102, 126, 234, 0.1);
     transform: translateY(-2px);
@@ -195,6 +195,54 @@ h2 {
     border-radius: 8px;
     padding: 8px;
     cursor: pointer;
+}
+
+/* Hacim Çevirme Özel Stilleri */
+.volume-section {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.volume-section h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.volume-section input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #2d3748;
+}
+
+.volume-section input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+    background: #ffffff;
+}
+
+.volume-section button {
+    background: linear-gradient(45deg, #ffffff, #f8f9fa);
+    color: #4facfe;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.volume-section button:hover {
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+.volume-section button:active {
+    transform: translateY(0);
 }
 
 /* Sıcaklık Çevirme Özel Stilleri */
@@ -243,6 +291,20 @@ h2 {
 
 .temperature-section button:active {
     transform: translateY(0);
+}
+
+/* Hacim Sonuç Stili */
+.volume-result {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Sıcaklık Sonuç Stili */

@@ -186,6 +186,8 @@ function lisenotHesapla(){
     let not8 = parseFloat(document.getElementById("not8").value);
     let toplam = not1+not2+not3+not4+not5+not6+not7+not8;
     let sonuc =toplam/8;
+    console.log("Hesaplanıyor...");
+    console.log(sonuc);
     let mesaj = " ";
     if (isNaN(not1) || isNaN(not2) || isNaN(not3) || isNaN(not4) || isNaN(not5) || isNaN(not6) || isNaN(not7) || isNaN(not8)) {
         document.getElementById("sonuc").innerHTML = "Lütfen tüm notları giriniz.";
@@ -196,6 +198,7 @@ function lisenotHesapla(){
       else if (sonuc >= 70) mesaj = "Teşekkür 😊";
       else if (sonuc >= 50) mesaj = "Geçti 👍";
       else mesaj = "Kaldı ❌";
+      console.log(mesaj);
 
      document.getElementById("sonuc").innerHTML = "Ortalama: " + sonuc.toFixed(2) + " - " + mesaj;
 
@@ -211,6 +214,8 @@ function ortaokulnotHesapla(){
     let not7 = parseFloat(document.getElementById("not7").value);
     let toplam = not1+not2+not3+not4+not5+not6+not7;
     let sonuc =toplam/7;
+    console.log("Hesaplanıyor...");
+    console.log(sonuc);
     let mesaj = " ";
     if (isNaN(not1) || isNaN(not2) || isNaN(not3) || isNaN(not4) || isNaN(not5) || isNaN(not6) || isNaN(not7)) {
         document.getElementById("sonuc").innerHTML = "Lütfen tüm notları giriniz.";
@@ -221,9 +226,33 @@ function ortaokulnotHesapla(){
       else if (sonuc >= 70) mesaj = "Teşekkür 😊";
       else if (sonuc >= 50) mesaj = "Geçti 👍";
       else mesaj = "Kaldı ❌";
+      console.log(mesaj);
 
      document.getElementById("sonuc").innerHTML = "Ortalama: " + sonuc.toFixed(2) + " - " + mesaj;
 
 }
+
+function galonHesapla(){
+    let litre = parseFloat(document.getElementById("litre").value);
+    let sonuc = (litre*0.264172);
+    if(isNaN(litre))
+        document.getElementById("litre").innerHTML = "Lütfen Değer Giriniz.";
+    console.log("Hesaplanıyor...");
+    console.log(sonuc);
+    
+    document.getElementById("sonuc").innerHTML = sonuc +" Gal";
+}
+
+function litreHesapla(){
+    let galon = parseFloat(document.getElementById("galon").value);
+    let sonuc = (galon*3.78541);
+    if(isNaN(galon))
+        document.getElementById("litre").innerHTML = "Lütfen Değer Giriniz.";
+    console.log("Hesaplanıyor...");
+    console.log(sonuc);
+    
+    document.getElementById("sonuc").innerHTML = sonuc +" Litre";
+}
+
 
 
