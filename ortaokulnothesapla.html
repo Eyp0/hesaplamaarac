@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ortaokulnoHesaplayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ortaaokulnotHesaplayıcı</h1>
+        <div class="grade-input-container">
+            <div class="grade-input-group">
+                <h3>Ders 1</h3>
+                <input type="number" id="not1" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 2</h3>
+                <input type="number" id="not2" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 3</h3>
+                <input type="number" id="not3" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 4</h3>
+                <input type="number" id="not4" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 5</h3>
+                <input type="number" id="not5" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 6</h3>
+                <input type="number" id="not6" min="0" max="100" placeholder="0-100">
+            </div>
+            <div class="grade-input-group">
+                <h3>Ders 7</h3>
+                <input type="number" id="not7" min="0" max="100" placeholder="0-100">
+            </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="calculate" onclick="ortaokulnotHesapla()">Ortalamayı Hesapla</button>
+        </div>
+        <p id="sonuc"></p>
+        </div>
+        <div class="container">
+            <h2>ortaokulnotHesapla</h2>
+            <p>Bu bölüm,ortaokul öğrencilerinin ders notlarını alır
+                 ve genel ortalamayı hesaplar. Sonuç ekranda detaylı şekilde gösterilir.
+                 Takdir, Teşekkür, Geçti veya Kaldı durumu belirtilir.</p>
+            </div>  
+    <script src="script.js"></script>
+</body>
+</html>

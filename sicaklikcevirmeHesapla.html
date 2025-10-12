@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sicaklikcevirmeHesapla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>sicaklikcevirmeHesapla</h1>
+        <div class="input-container">
+            <h3>°C (Santigrat) Giriniz:</h3>
+            <input type="number" id="santigrat" placeholder="Santigrat değeri giriniz">
+            <button id="calculateCtoF" onclick="fahrenheitHesapla()">Fahrenheit'e Çevir</button>
+        </div>
+        <div class="input-container">
+            <h3>°F (Fahrenheit) Giriniz:</h3>
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit değeri giriniz">
+            <button id="calculateFtoC" onclick="santigratHesapla()">Santigrat'a Çevir</button>
+        </div>
+        <p id="sonuc"></p>
+    </div>
+    <div class="container">
+        <h2>Sıcaklık Çevirme</h2>
+        <p>Sıcaklık birimlerini birbirine çevirebilirsiniz. Santigrat (°C) ve Fahrenheit (°F) arasında dönüşüm yapabilirsiniz.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
