@@ -379,12 +379,38 @@ p {
 }
 
 /* Ana Sayfa Özel Stilleri */
-.subtitle {
+.header {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
     color: #6b7280;
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     font-weight: 500;
+}
+
+
+/* Kategoriler */
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.category-section {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
 }
 
 .calculator-grid {
@@ -464,6 +490,28 @@ p {
         font-size: 1.8rem;
     }
     
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    
+    .categories {
+        gap: 30px;
+    }
+    
+    .category-title {
+        font-size: 1.25rem;
+    }
+    
+    .calculator-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .calculator-card {
+        padding: 20px;
+    }
+    
     .input-container {
         flex-direction: column;
         gap: 12px;
@@ -505,15 +553,6 @@ p {
         width: 100%;
         padding: 18px;
     }
-    
-    .calculator-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .calculator-card {
-        padding: 20px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -524,6 +563,31 @@ p {
     
     h1 {
         font-size: 1.6rem;
+    }
+    
+    .header {
+        margin-bottom: 25px;
+    }
+    
+    
+    .categories {
+        gap: 25px;
+    }
+    
+    .category-title {
+        font-size: 1.125rem;
+    }
+    
+    .calculator-card {
+        padding: 16px;
+    }
+    
+    .calculator-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .calculator-card p {
+        font-size: 0.9rem;
     }
     
     .ders-sayisi-container {
@@ -564,19 +628,6 @@ p {
     #sayi, #us {
         padding: 12px 15px;
         font-size: 15px;
-    }
-    
-    .subtitle {
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-    
-    .calculator-card h3 {
-        font-size: 1.1rem;
-    }
-    
-    .calculator-card p {
-        font-size: 0.9rem;
     }
 }
 
