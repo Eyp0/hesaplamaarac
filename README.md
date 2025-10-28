@@ -1,30 +1,33 @@
-HesaplamaArac.com
+🌐 HesaplamaArac.com
 
-Bu proje, günlük hayatta işe yarayan basit ama pratik hesaplamaları tek bir yerde toplamak için geliştirdiğim kişisel web sitemdir.
-Amacım: kullanıcıların karmaşık hesapları kolayca yapabilmesi ve sade bir deneyim yaşaması.
+HesaplamaArac.com, günlük hayatta işine yarayacak basit ama pratik hesaplama araçlarını tek bir yerde toplamak için geliştirdiğim kişisel web sitemdir.
 
-💡 Özellikler
+🎯 Amacım: Karmaşık hesapları kolaylaştırmak ve kullanıcılara sade, reklamsız bir deneyim sunmak.
 
-Farklı kategorilerde hesaplama araçları
+⚙️ Özellikler
 
-Mobil uyumlu, sade tasarım
+   🧮 Farklı kategorilerde hesaplama araçları
 
-Reklamsız ve hızlı kullanım
+   📱 Mobil uyumlu ve sade tasarım
 
-GitHub Pages + özel domain bağlantısı
+   ⚡ Hızlı, reklamsız kullanım
+
+   ☁️ GitHub Pages + özel domain bağlantısı
+   
 
 🛠️ Kullanılan Teknolojiler
 
-HTML, CSS, JavaScript
+   💻 HTML, CSS, JavaScript
 
-GitHub Pages barındırma
+   🚀 GitHub Pages barındırma
 
-Domain: https://hesaplamaarac.com
+   🔗 Domain: https://hesaplamaarac.com
+   
 
-🚀 Gelecek Planları
+🚧 Gelecek Planları
 
-Yeni hesaplama araçları ekleniyor
+   ➕ Yeni hesaplama araçları eklenecek
 
-Daha modern bir arayüz tasarımı
+   🎨 Daha modern bir arayüz tasarımı
 
-Karanlık mod desteği
+   🌙 Karanlık mod desteği
