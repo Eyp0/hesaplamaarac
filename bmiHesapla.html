@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,8 @@
     
    
     <title>BMI Hesaplama - Vücut Kitle İndeksi Hesapla | hesaplamaarac.com</title>
-    <meta name="description" content="Boy ve kilonuza göre BMI (Vücut Kitle İndeksi) hesaplayın. Sağlıklı kilo aralığınızı öğrenin ve ideal kilonuzu belirleyin.">
-    <meta name="keywords" content="BMI, vücut kitle indeksi, kilo hesaplama, boy kilo oranı, sağlık, ideal kilo">
+    <meta name="description" content="Boy ve kilonuza göre BMI (Vücut Kitle İndeksi) hesaplayın. Sağlıklı kilo aralığınızı öğrenin ve ideal kilonuzu belirleyin. Ücretsiz online BMI hesaplama aracı ile vücut kitle indeksinizi hemen öğrenin.">
+    <meta name="keywords" content="BMI, vücut kitle indeksi, kilo hesaplama, boy kilo oranı, sağlık, ideal kilo, BMI hesaplama, vücut kitle indeksi hesaplama, BMI hesapla, beden kitle indeksi, ideal kilo hesaplama, sağlıklı kilo">
     <meta name="author" content="hesaplamaarac.com">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hesaplamaarac.com/bmiHesapla.html">
@@ -29,11 +29,29 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="BMI Hesaplama - Vücut Kitle İndeksi Hesapla">
     <meta name="twitter:description" content="Boy ve kilonuza göre BMI (Vücut Kitle İndeksi) hesaplayın. Sağlıklı kilo aralığınızı öğrenin ve ideal kilonuzu belirleyin.">
+    <meta name="twitter:site" content="@hesaplamaarac">
+    <meta name="theme-color" content="#667eea">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "BMI Hesaplama",
+      "url": "https://hesaplamaarac.com/bmiHesapla.html",
+      "description": "Boy ve kilonuza göre BMI (Vücut Kitle İndeksi) hesaplayın. Sağlıklı kilo aralığınızı öğrenin ve ideal kilonuzu belirleyin.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>BMI Hesapla</h1>
+    <main class="container">
+        <h1>BMI Hesaplama</h1>
         <div class="input-container">
             <h3>Boyunuzu Giriniz (cm):</h3>
             <input type="number" id="boy" placeholder="Boyunuzu cm cinsinden giriniz">
@@ -42,11 +60,11 @@
             <button id="calculate" onclick="bmiHesapla()">Hesapla</button>
         </div>
         <p id="sonuc"></p>
-    </div>
-    <div class="container">
-        <h2>BMI Hesaplama</h2>
+    </main>
+    <section class="container">
+        <h2>BMI Hesaplama Hakkında</h2>
         <p>Vücut Kitle İndeksi (BMI), vücut ağırlığının boy uzunluğunun karesine bölünmesiyle hesaplanır. Sağlıklı kilo aralığınızı öğrenmek için kullanabilirsiniz.</p>
-    </div>
+    </section>
     <script src="script.js"></script>
     
 </body>
