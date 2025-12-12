@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-H9LYELB423');
-    </script>
-    
-    <title>Kare Hesaplama - Sayının Karesini Hesapla | hesaplamaarac.com</title>
-    <meta name="description" content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun. Ücretsiz online kare hesaplama aracı ile x² değerini hesaplayın.">
-    <meta name="keywords" content="kare hesaplama, sayının karesi, matematik, üs hesaplama, matematik hesaplama, kare hesapla, sayı karesi, kare alma, kare hesaplama aracı, online kare hesaplama">
-    <meta name="author" content="hesaplamaarac.com">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hesaplamaarac.com/kareHesaplama.html">
-    
-    <meta property="og:title" content="Kare Hesaplama - Sayının Karesini Hesapla">
-    <meta property="og:description" content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hesaplamaarac.com/kareHesaplama.html">
-    
- 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Kare Hesaplama - Sayının Karesini Hesapla">
-    <meta name="twitter:description" content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun.">
-    <meta name="twitter:site" content="@hesaplamaarac">
-    <meta name="theme-color" content="#667eea">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9LYELB423');
+  </script>
+
+  <title>Kare Hesaplama - Sayının Karesini Hesapla | hesaplamaarac.com</title>
+  <meta name="description"
+    content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun. Ücretsiz online kare hesaplama aracı ile x² değerini hesaplayın.">
+  <meta name="keywords"
+    content="kare hesaplama, sayının karesi, matematik, üs hesaplama, matematik hesaplama, kare hesapla, sayı karesi, kare alma, kare hesaplama aracı, online kare hesaplama">
+  <meta name="author" content="hesaplamaarac.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hesaplamaarac.com/kareHesaplama.html">
+
+  <meta property="og:title" content="Kare Hesaplama - Sayının Karesini Hesapla">
+  <meta property="og:description"
+    content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hesaplamaarac.com/kareHesaplama.html">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kare Hesaplama - Sayının Karesini Hesapla">
+  <meta name="twitter:description"
+    content="Bir sayının karesini hesaplayın. Matematiksel kare hesaplama aracı ile sayıların karesini kolayca bulun.">
+  <meta name="twitter:site" content="@hesaplamaarac">
+  <meta name="theme-color" content="#667eea">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
@@ -49,20 +54,22 @@
     }
     </script>
 </head>
+
 <body>
-    <main class="container">
-        <h1>Kare Hesaplama</h1>
-        <div class="input-container">
-            <input type="number" id="sayi" placeholder="Sayıyı giriniz">
-            <button id="calculate" onclick="kareHesapla()">Hesapla</button>
-            <p id="sonuc"></p>
-        </div>
-    </main>
-    <section class="container">
-        <h2>Kare Hesaplama Hakkında</h2>
-        <p>Kare, bir sayının kendisiyle çarpılacağını gösterir. 
-            Örneğin, 2'nin karesi, 2 x 2 = 4'dir.</p>
-    </section>
-        <script src="script.js"></script>
+  <main class="container">
+    <h1>Kare Hesaplama</h1>
+    <div class="input-container">
+      <input type="number" id="sayi" placeholder="Sayıyı giriniz" onkeydown="enterbasildi(event, kareHesapla)">
+      <button id="calculate" onclick="kareHesapla()">Hesapla</button>
+      <p id="sonuc"></p>
+    </div>
+  </main>
+  <section class="container">
+    <h2>Kare Hesaplama Hakkında</h2>
+    <p>Kare, bir sayının kendisiyle çarpılacağını gösterir.
+      Örneğin, 2'nin karesi, 2 x 2 = 4'dir.</p>
+  </section>
+  <script src="script.js"></script>
 </body>
+
 </html>

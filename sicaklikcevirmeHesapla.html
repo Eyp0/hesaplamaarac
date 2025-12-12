@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-H9LYELB423');
-    </script>
-    
-   
-    <title>Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü | hesaplamaarac.com</title>
-    <meta name="description" content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın. Ücretsiz online sıcaklık çevirme aracı ile Celsius ve Fahrenheit dönüşümü yapın.">
-    <meta name="keywords" content="sıcaklık çevirme, santigrat fahrenheit, celsius fahrenheit, sıcaklık dönüşümü, sıcaklık çevirici, celsius fahrenheit çevirme, sıcaklık birimi çevirme, online sıcaklık çevirme, derece çevirme">
-    <meta name="author" content="hesaplamaarac.com">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hesaplamaarac.com/sicaklikcevirmeHesapla.html">
-    
-   
-    <meta property="og:title" content="Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü">
-    <meta property="og:description" content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hesaplamaarac.com/sicaklikcevirmeHesapla.html">
-    
-   
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü">
-    <meta name="twitter:description" content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın.">
-    <meta name="twitter:site" content="@hesaplamaarac">
-    <meta name="theme-color" content="#667eea">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9LYELB423');
+  </script>
+
+
+  <title>Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü | hesaplamaarac.com</title>
+  <meta name="description"
+    content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın. Ücretsiz online sıcaklık çevirme aracı ile Celsius ve Fahrenheit dönüşümü yapın.">
+  <meta name="keywords"
+    content="sıcaklık çevirme, santigrat fahrenheit, celsius fahrenheit, sıcaklık dönüşümü, sıcaklık çevirici, celsius fahrenheit çevirme, sıcaklık birimi çevirme, online sıcaklık çevirme, derece çevirme">
+  <meta name="author" content="hesaplamaarac.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hesaplamaarac.com/sicaklikcevirmeHesapla.html">
+
+
+  <meta property="og:title" content="Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü">
+  <meta property="og:description"
+    content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hesaplamaarac.com/sicaklikcevirmeHesapla.html">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sıcaklık Çevirme - Santigrat Fahrenheit Dönüştürücü">
+  <meta name="twitter:description"
+    content="Santigrat ve Fahrenheit arasında sıcaklık çevirme yapın. °C °F dönüşümü kolayca hesaplayın.">
+  <meta name="twitter:site" content="@hesaplamaarac">
+  <meta name="theme-color" content="#667eea">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
@@ -51,25 +56,30 @@
     }
     </script>
 </head>
+
 <body>
-    <main class="container">
-        <h1>Sıcaklık Çevirme</h1>
-        <div class="input-container">
-            <h3>°C (Santigrat) Giriniz:</h3>
-            <input type="number" id="santigrat" placeholder="Santigrat değeri giriniz">
-            <button id="calculateCtoF" onclick="fahrenheitHesapla()">Fahrenheit'e Çevir</button>
-        </div>
-        <div class="input-container">
-            <h3>°F (Fahrenheit) Giriniz:</h3>
-            <input type="number" id="fahrenheit" placeholder="Fahrenheit değeri giriniz">
-            <button id="calculateFtoC" onclick="santigratHesapla()">Santigrat'a Çevir</button>
-        </div>
-        <p id="sonuc"></p>
-    </main>
-    <section class="container">
-        <h2>Sıcaklık Çevirme Hakkında</h2>
-        <p>Sıcaklık birimlerini birbirine çevirebilirsiniz. Santigrat (°C) ve Fahrenheit (°F) arasında dönüşüm yapabilirsiniz.</p>
-    </section>
-    <script src="script.js"></script>
+  <main class="container">
+    <h1>Sıcaklık Çevirme</h1>
+    <div class="input-container">
+      <h3>°C (Santigrat) Giriniz:</h3>
+      <input type="number" id="santigrat" placeholder="Santigrat değeri giriniz"
+        onkeydown="enterbasildi(event, fahrenheitHesapla)">
+      <button id="calculateCtoF" onclic k="fahrenheitHesapla()">Fahrenheit'e Çevir</button>
+    </div>
+    <div class="input-container">
+      <h3>°F (Fahrenheit) Giriniz:</h3>
+      <input type="number" id="fahrenheit" placeholder="Fahrenheit değeri giriniz"
+        onkeydown="enterbasildi(event, santigratHesapla)">
+      <button id="calculateFtoC" onclick="santigratHesapla()">Santigrat'a Çevir</button>
+    </div>
+    <p id="sonuc"></p>
+  </main>
+  <section class="container">
+    <h2>Sıcaklık Çevirme Hakkında</h2>
+    <p>Sıcaklık birimlerini birbirine çevirebilirsiniz. Santigrat (°C) ve Fahrenheit (°F) arasında dönüşüm
+      yapabilirsiniz.</p>
+  </section>
+  <script src="script.js"></script>
 </body>
+
 </html>

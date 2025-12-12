@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-H9LYELB423');
-    </script>
-    
-   
-    <title>Asal Sayı Hesaplama - Online Asal Sayı Kontrolü | hesaplamaarac.com</title>
-    <meta name="description" content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün. Asal sayı testi ve kontrolü için en iyi araç.">
-    <meta name="keywords" content="asal sayı, asal sayı hesaplama, matematik, sayı kontrolü, bölenler, matematik hesaplama, asal sayı testi, asal sayı kontrolü, asal sayı bulma, prime number, asal sayı aracı">
-    <meta name="author" content="hesaplamaarac.com">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hesaplamaarac.com/asalhesapla.html">
-    
-       <meta property="og:title" content="Asal Sayı Hesaplama - Online Asal Sayı Kontrolü">
-    <meta property="og:description" content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hesaplamaarac.com/asalhesapla.html">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Asal Sayı Hesaplama - Online Asal Sayı Kontrolü">
-    <meta name="twitter:description" content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün.">
-    <meta name="twitter:site" content="@hesaplamaarac">
-    <meta name="theme-color" content="#667eea">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9LYELB423');
+  </script>
+
+
+  <title>Asal Sayı Hesaplama - Online Asal Sayı Kontrolü | hesaplamaarac.com</title>
+  <meta name="description"
+    content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün. Asal sayı testi ve kontrolü için en iyi araç.">
+  <meta name="keywords"
+    content="asal sayı, asal sayı hesaplama, matematik, sayı kontrolü, bölenler, matematik hesaplama, asal sayı testi, asal sayı kontrolü, asal sayı bulma, prime number, asal sayı aracı">
+  <meta name="author" content="hesaplamaarac.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hesaplamaarac.com/asalhesapla.html">
+
+  <meta property="og:title" content="Asal Sayı Hesaplama - Online Asal Sayı Kontrolü">
+  <meta property="og:description"
+    content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hesaplamaarac.com/asalhesapla.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Asal Sayı Hesaplama - Online Asal Sayı Kontrolü">
+  <meta name="twitter:description"
+    content="Bir sayının asal olup olmadığını kontrol edin. Ücretsiz online asal sayı hesaplama aracı ile sayılarınızı test edin ve bölenlerini görün.">
+  <meta name="twitter:site" content="@hesaplamaarac">
+  <meta name="theme-color" content="#667eea">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
@@ -49,23 +54,25 @@
     }
     </script>
 </head>
-<body>
-    <main class="container">
-        <h1>Asal Sayı Hesaplama</h1>
-        <div class="input-container">
-            <input type="number" id="sayi" placeholder="Sayıyı giriniz">
-            <button id="calculate" onclick="asalHesapla()">Hesapla</button>
-            <p id="sonuc"></p>
-            <p id="bolenler"></p>
-        </div>
-    
-    </main>
-    <section class="container">
-        <h2>Asal Sayı Hakkında</h2>
-        <p>Asal sayılar, sadece 1'e ve kendisine bölünebilen sayılardır. 
-            Örneğin, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31 gibi sayılar asal sayılardır.</p>
-    </section>
 
-    <script src="script.js"></script>
+<body>
+  <main class="container">
+    <h1>Asal Sayı Hesaplama</h1>
+    <div class="input-container">
+      <input type="number" id="sayi" placeholder="Sayıyı giriniz" onkeydown="enterbasildi(event, asalHesapla)">
+      <button id="calculate" onclick="asalHesapla()">Hesapla</button>
+      <p id="sonuc"></p>
+      <p id="bolenler"></p>
+    </div>
+
+  </main>
+  <section class="container">
+    <h2>Asal Sayı Hakkında</h2>
+    <p>Asal sayılar, sadece 1'e ve kendisine bölünebilen sayılardır.
+      Örneğin, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31 gibi sayılar asal sayılardır.</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

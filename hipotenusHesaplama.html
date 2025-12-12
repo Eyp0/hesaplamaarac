@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-H9LYELB423');
-    </script>
-    
-   
-    <title>Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul | hesaplamaarac.com</title>
-    <meta name="description" content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun. Ücretsiz online hipotenüs hesaplama aracı ile c² = a² + b² formülünü kullanın.">
-    <meta name="keywords" content="hipotenüs, pisagor teoremi, dik üçgen, matematik, geometri, üçgen hesaplama, hipotenüs hesaplama, pisagor hesaplama, dik üçgen hesaplama, hipotenüs bulma, geometri hesaplama">
-    <meta name="author" content="hesaplamaarac.com">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hesaplamaarac.com/hipotenusHesaplama.html">
-    
-    
-    <meta property="og:title" content="Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul">
-    <meta property="og:description" content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hesaplamaarac.com/hipotenusHesaplama.html">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul">
-    <meta name="twitter:description" content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun.">
-    <meta name="twitter:site" content="@hesaplamaarac">
-    <meta name="theme-color" content="#667eea">
-    <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9LYELB423');
+  </script>
+
+
+  <title>Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul | hesaplamaarac.com</title>
+  <meta name="description"
+    content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun. Ücretsiz online hipotenüs hesaplama aracı ile c² = a² + b² formülünü kullanın.">
+  <meta name="keywords"
+    content="hipotenüs, pisagor teoremi, dik üçgen, matematik, geometri, üçgen hesaplama, hipotenüs hesaplama, pisagor hesaplama, dik üçgen hesaplama, hipotenüs bulma, geometri hesaplama">
+  <meta name="author" content="hesaplamaarac.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hesaplamaarac.com/hipotenusHesaplama.html">
+
+
+  <meta property="og:title" content="Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul">
+  <meta property="og:description"
+    content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hesaplamaarac.com/hipotenusHesaplama.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hipotenüs Hesaplama - Pisagor Teoremi ile Hipotenüs Bul">
+  <meta name="twitter:description"
+    content="Dik üçgende hipotenüs uzunluğunu hesaplayın. Pisagor teoremi ile dik kenarlardan hipotenüsü kolayca bulun.">
+  <meta name="twitter:site" content="@hesaplamaarac">
+  <meta name="theme-color" content="#667eea">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
@@ -50,22 +55,26 @@
     }
     </script>
 </head>
+
 <body>
-    <main class="container">
-        <h1>Hipotenüs Hesaplama</h1>
-        <div class="input-container">
-            <h3>Birinci Dik Kenarı Giriniz:</h3>
-            <input type="number" id="birinicidikkenar" placeholder="Birinci dik kenarı giriniz">
-            <h3>İkinci Dik Kenarı Giriniz:</h3>
-            <input type="number" id="ikincidikkenar" placeholder="İkinci dik kenarı giriniz">
-            <button id="calculate" onclick="hipotenusHesapla()">Hesapla</button>
-        </div>
-        <p id="sonuc"></p>
-    </main>
-    <section class="container">
-        <h2>Hipotenüs Hesaplama Hakkında</h2>
-        <p>Hipotenüs, dik üçgende dik açının karşısındaki kenardır. Pisagor teoremi ile hesaplanır: c² = a² + b²</p>
-    </section>
-    <script src="script.js"></script>
+  <main class="container">
+    <h1>Hipotenüs Hesaplama</h1>
+    <div class="input-container">
+      <h3>Birinci Dik Kenarı Giriniz:</h3>
+      <input type="number" id="birinicidikkenar" placeholder="Birinci dik kenarı giriniz"
+        onkeydown="enterbasildi(event, hipotenusHesapla)">
+      <h3>İkinci Dik Kenarı Giriniz:</h3>
+      <input type="number" id="ikincidikkenar" placeholder="İkinci dik kenarı giriniz"
+        onkeydown="enterbasildi(event, hipotenusHesapla)">
+      <button id="calculate" onclick="hipotenusHesapla()">Hesapla</button>
+    </div>
+    <p id="sonuc"></p>
+  </main>
+  <section class="container">
+    <h2>Hipotenüs Hesaplama Hakkında</h2>
+    <p>Hipotenüs, dik üçgende dik açının karşısındaki kenardır. Pisagor teoremi ile hesaplanır: c² = a² + b²</p>
+  </section>
+  <script src="script.js"></script>
 </body>
+
 </html>
