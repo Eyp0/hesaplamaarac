@@ -312,6 +312,70 @@ function universitenotHesapla() {
     document.getElementById("sonuc").innerHTML = "Genel Not Ortalaması (GNO): " + gano.toFixed(2);
 }
 
+function gunluksuHesapla() {
+    let kilogram = parseFloat(document.getElementById("kilogram").value);
+    let sonuc = kilogram * 0.033;
+    console.log("Hesaplanıyor...");
+    console.log(sonuc);
+
+    document.getElementById("sonuc").innerHTML = sonuc + " Litre";
+}
+
+function uzunlukHesapla() {
+    const from = document.getElementById("fromUnit").value;
+    const to = document.getElementById("toUnit").value;
+    const value = parseFloat(document.getElementById("value").value);
+    const resultEl = document.getElementById("sonuc");
+    const units = {
+        metre: 1,
+        kilometre: 1000,
+        santimetre: 0.01,
+        milimetre: 0.001,
+        yard: 0.9144,
+        feet: 0.3048,
+        inc: 0.0254
+    };
+    if (isNaN(value)) {
+        resultEl.innerText = "Lütfen geçerli bir değer giriniz";
+        return;
+    }
+    const baseValue = value * units[from];
+    const result = baseValue / units[to];
+
+    console.log("Hesaplanıyor...");
+    console.log(result);
+    resultEl.innerText = `${value} ${from} = ${result.toFixed(4)} ${to}`;
+}
+
+function yksnetHesapla() {
+    let turkceD = parseFloat(document.getElementById("turkce-d").value) || 0;
+    let turkceY = parseFloat(document.getElementById("turkce-y").value) || 0;
+    let turkceNet = turkceD - (turkceY / 4);
+    document.getElementById("turkce-net").innerText = turkceNet.toFixed(2);
+
+    let sosyalD = parseFloat(document.getElementById("sosyal-d").value) || 0;
+    let sosyalY = parseFloat(document.getElementById("sosyal-y").value) || 0;
+    let sosyalNet = sosyalD - (sosyalY / 4);
+    document.getElementById("sosyal-net").innerText = sosyalNet.toFixed(2);
+
+    let matD = parseFloat(document.getElementById("mat-d").value) || 0;
+    let matY = parseFloat(document.getElementById("mat-y").value) || 0;
+    let matNet = matD - (matY / 4);
+    document.getElementById("mat-net").innerText = matNet.toFixed(2);
+
+    let fenD = parseFloat(document.getElementById("fen-d").value) || 0;
+    let fenY = parseFloat(document.getElementById("fen-y").value) || 0;
+    let fenNet = fenD - (fenY / 4);
+    document.getElementById("fen-net").innerText = fenNet.toFixed(2);
+    let totalNet = turkceNet + sosyalNet + matNet + fenNet;
+
+    console.log("Hesaplanıyor...");
+    console.log(totalNet);
+    document.getElementById("sonuc").innerHTML = "Toplam Net: " + totalNet.toFixed(2);
+}
+
+
+
 
 
 

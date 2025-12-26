@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Su Hesaplayıcı</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Günlük Su Hesaplayıcı</h1>
+        <div class="input-container">
+            <input type="number" id="kilogram" placeholder="Kilogram giriniz"
+                onkeydown="enterbasildi(event, gunluksuHesapla)">
+            <button id="calculate" onclick="gunluksuHesapla()">Hesapla</button>
+            <p id="sonuc"></p>
+        </div>
+    </main>
+    <section class="container">
+        <h2>Günlük Su Hesaplayıcı Hakkında</h2>
+        <p>Günlük su tüketimini hesaplayın.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

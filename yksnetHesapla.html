@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> YKS Net Hesapla</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>YKS Net Hesapla</h1>
+        <div class="input-container">
+            <div class="test-row header-row">
+                <span class="ders-label">Ders</span>
+                <span class="input-label">Doğru</span>
+                <span class="input-label">Yanlış</span>
+                <span class="net-label">Net</span>
+            </div>
+
+            <div class="test-row">
+                <span class="ders-adi">Türkçe (40)</span>
+                <input type="number" id="turkce-d" placeholder="D" min="0" max="40" class="net-input">
+                <input type="number" id="turkce-y" placeholder="Y" min="0" max="40" class="net-input">
+                <span id="turkce-net" class="net-val">0.00</span>
+            </div>
+
+            <div class="test-row">
+                <span class="ders-adi">Sosyal (20)</span>
+                <input type="number" id="sosyal-d" placeholder="D" min="0" max="20" class="net-input">
+                <input type="number" id="sosyal-y" placeholder="Y" min="0" max="20" class="net-input">
+                <span id="sosyal-net" class="net-val">0.00</span>
+            </div>
+
+            <div class="test-row">
+                <span class="ders-adi">Matematik (40)</span>
+                <input type="number" id="mat-d" placeholder="D" min="0" max="40" class="net-input">
+                <input type="number" id="mat-y" placeholder="Y" min="0" max="40" class="net-input">
+                <span id="mat-net" class="net-val">0.00</span>
+            </div>
+
+            <div class="test-row">
+                <span class="ders-adi">Fen (20)</span>
+                <input type="number" id="fen-d" placeholder="D" min="0" max="20" class="net-input">
+                <input type="number" id="fen-y" placeholder="Y" min="0" max="20" class="net-input">
+                <span id="fen-net" class="net-val">0.00</span>
+            </div>
+
+            <button onclick="yksnetHesapla()" style="margin-top: 20px;">Hesapla</button>
+        </div>
+        <p id="sonuc"></p>
+    </main>
+    <section class="container">
+        <h2>YKS Net Hesapla Hakkında</h2>
+        <p>YKS net hesaplayıcı ile YKS netinizi hesaplayabilirsiniz.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

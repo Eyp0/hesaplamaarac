@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Uzunluk Çevirme - Uzunluk Birimlerini Dönüştür | hesaplamaarac.com</title>
+    <meta name="description"
+        content="Metre, kilometre, santimetre, milimetre, yard, feet ve inç arasında kolayca dönüşüm yapın.">
+    <meta name="theme-color" content="#667eea">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LYELB423"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H9LYELB423');
+    </script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Uzunluk Çevirme</h1>
+        <div class="input-container">
+            <h3>Dönüştürülecek Birim</h3>
+            <select id="fromUnit">
+                <option value="metre">Metre (m)</option>
+                <option value="kilometre">Kilometre (km)</option>
+                <option value="santimetre">Santimetre (cm)</option>
+                <option value="milimetre">Milimetre (mm)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="feet">Feet (ft)</option>
+                <option value="inc">İnç (in)</option>
+            </select>
+
+            <h3>Hedef Birim</h3>
+            <select id="toUnit">
+                <option value="metre">Metre (m)</option>
+                <option value="kilometre">Kilometre (km)</option>
+                <option value="santimetre">Santimetre (cm)</option>
+                <option value="milimetre">Milimetre (mm)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="feet">Feet (ft)</option>
+                <option value="inc">İnç (in)</option>
+            </select>
+
+            <h3>Değer</h3>
+            <input type="number" id="value" placeholder="Dönüştürülecek değeri giriniz"
+                onkeydown="enterbasildi(event, uzunlukHesapla)">
+
+            <button onclick="uzunlukHesapla()">Hesapla</button>
+        </div>
+        <p id="sonuc"></p>
+    </main>
+
+    <section class="container">
+        <h2>Uzunluk Çevirme Hakkında</h2>
+        <p>Bu araç ile farklı uzunluk birimleri arasında hızlı ve doğru dönüşüm yapabilirsiniz. Desteklenen birimler:
+            Metre, Kilometre, Santimetre, Milimetre, Yard, Feet ve İnç.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
